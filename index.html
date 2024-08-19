@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gastronomía Market</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <h1>Registro de Proveedores</h1>
+    <form id="proveedorForm">
+        <label for="nombreProveedor">Nombre del Proveedor:</label>
+        <input type="text" id="nombreProveedor" required><br><br>
+
+        <label for="articuloProveedor">Artículo:</label>
+        <input type="text" id="articuloProveedor" required><br><br>
+
+        <label for="precioProveedor">Precio:</label>
+        <input type="number" id="precioProveedor" required><br><br>
+
+        <label for="emailProveedor">Email:</label>
+        <input type="email" id="emailProveedor" required><br><br>
+
+        <label for="telefonoProveedor">Teléfono:</label>
+        <input type="text" id="telefonoProveedor" required><br><br>
+
+        <label for="paisProveedor">País:</label>
+        <input type="text" id="paisProveedor" required><br><br>
+
+        <label for="internacionalProveedor">¿Es Internacional?</label>
+        <input type="checkbox" id="internacionalProveedor"><br><br>
+
+        <button type="button" id="registroBtn">Agregar Proveedor</button>
+    </form>
+
+    <h2>Lista de Proveedores</h2>
+    <table id="tablaProveedores">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Artículo</th>
+                <th>Precio</th>
+                <th>País</th>
+                <th>Email</th>
+                <th>Teléfono</th>
+                <th>Tipo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las filas se agregarán aquí dinámicamente -->
+        </tbody>
+    </table>
+
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>

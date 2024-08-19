@@ -1,0 +1,22 @@
+/* assets/css/styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#resultados {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
