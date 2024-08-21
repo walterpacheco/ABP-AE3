@@ -1,6 +1,4 @@
-// assets/js/main.js
-
-import { TipoProveedor } from './TipoProveedor.js';
+import { TipoProveedor } from './tipoProveedor.js';
 
 const proveedores = [];
 

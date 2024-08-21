@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Gastronomía Market</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>Registro de Proveedores</h1>
+    <div class="container">
+        <h1>Registro de Proveedores</h1>
     <form id="proveedorForm">
-        <label for="nombreProveedor">Nombre del Proveedor:</label>
-        <input type="text" id="nombreProveedor" required><br><br>
+        <label class="form-label" for="nombreProveedor">Nombre del Proveedor:</label>
+        <input class="form-control" type="text" id="nombreProveedor" required><br><br>
 
-        <label for="articuloProveedor">Artículo:</label>
-        <input type="text" id="articuloProveedor" required><br><br>
+        <label class="form-label" for="articuloProveedor">Artículo:</label>
+        <input class="form-control" type="text" id="articuloProveedor" required><br><br>
 
-        <label for="precioProveedor">Precio:</label>
-        <input type="number" id="precioProveedor" required><br><br>
+        <label class="form-label" for="precioProveedor">Precio:</label>
+        <input class="form-control" type="number" id="precioProveedor" required><br><br>
 
-        <label for="emailProveedor">Email:</label>
-        <input type="email" id="emailProveedor" required><br><br>
+        <label class="form-label" for="emailProveedor">Email:</label>
+        <input class="form-control" type="email" id="emailProveedor" required><br><br>
 
-        <label for="telefonoProveedor">Teléfono:</label>
-        <input type="text" id="telefonoProveedor" required><br><br>
+        <label class="form-label" for="telefonoProveedor">Teléfono:</label>
+        <input class="form-control" type="text" id="telefonoProveedor" required><br><br>
 
-        <label for="paisProveedor">País:</label>
-        <input type="text" id="paisProveedor" required><br><br>
+        <label class="form-label" for="paisProveedor">País:</label>
+        <input class="form-control" type="text" id="paisProveedor" required><br><br>
 
-        <label for="internacionalProveedor">¿Es Internacional?</label>
+        <label class="form-label" for="internacionalProveedor">¿Es Internacional?</label>
         <input type="checkbox" id="internacionalProveedor"><br><br>
 
-        <button type="button" id="registroBtn">Agregar Proveedor</button>
+        <button class="btn btn-success" type="button" id="registroBtn">Agregar Proveedor</button>
     </form>
 
-    <h2>Lista de Proveedores</h2>
-    <table id="tablaProveedores">
+    <h2 class="mt-3">Lista de Proveedores</h2>
+    <table id="tablaProveedores" class="table">
         <thead>
             <tr>
                 <th>Nombre</th>
@@ -46,10 +51,15 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Las filas se agregarán aquí dinámicamente -->
+            
         </tbody>
     </table>
+    </div>
 
     <script type="module" src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

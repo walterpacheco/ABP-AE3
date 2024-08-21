@@ -1,5 +1,4 @@
-// assets/js/TipoProveedor.js
-import { Proveedor } from './Proveedor.js';
+import { Proveedor } from './proveedor.js';
 
 export class TipoProveedor extends Proveedor {
     constructor(nombre, articulo, precio, pais, esInternacional) {
